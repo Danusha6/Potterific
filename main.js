@@ -18,10 +18,11 @@
   $(document).ready(function(){
       var houses = {};
 
-    for(let i =0; i < characters.length - 1; i++){
-      houses[characters[i].house] = true
+    for(let i =0; i < characters.length; i++){
+       if (characters[i].house) {
+          houses[characters[i].house] = true;
+      }
     }
-
       var buttonsContainer = $('#buttons');
  
       for (var house in houses) {
