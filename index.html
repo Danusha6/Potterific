@@ -1,4 +1,37 @@
-<!DOCTYPE html>
-<body>
-  
-</body>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="./main.js"></script>
+    </head>
+    <style>
+        .over {
+            background-color: orange;
+        }
+        .selected {
+            background-color: green;
+        }
+      #resetBtn {
+        background-color: pink;
+      }
+      .header{
+        background-color: pink;
+      }
+
+    </style>
+
+    <body>
+        <div id="buttons"></div>
+        <table border='1'>
+            <tr class="over">
+                <th id="name">name</th>
+                <th id="role">role</th>
+                <th id="house">house</th>
+                <th id="gender">gender</th>
+                <th id="alignment">alignment</th>
+            </tr>
+        </table>
+        <button id="resetBtn">reset</button>
+    </body>
+        
+     
+</html>
